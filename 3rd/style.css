@@ -1,0 +1,263 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Nunito Sans', sans-serif;
+color: #f25555;
+background-color: #f4f0e6;
+}
+
+.landing {
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+flex-direction: column;
+padding: 1rem;
+}
+
+h1 {
+font-size: 4rem;
+line-height: 1.2;
+}
+
+.bold {
+font-weight: bold;
+}
+
+.scroll-text {
+margin-top: 2rem;
+font-size: 1.25rem;
+cursor: pointer;
+transition: color 0.3s ease;
+}
+
+.scroll-text:hover {
+color: #e03d3d;
+}
+
+.next-section {
+height: 100vh;
+background-color: #f7f6f4;
+padding: 4rem 2rem;
+text-align: center;
+}
+
+@media (max-width: 768px) {
+h1 {
+    font-size: 2.5rem;
+}
+
+.scroll-text {
+    font-size: 1rem;
+}
+}
+
+/* .play-button {
+margin-top: 2%;
+padding: 1rem 2rem;
+font-size: 1rem;
+size: 100%;
+border: none;
+background-color: #f25555;
+color: white;
+border-radius: 8px;
+cursor: pointer;
+transition: background-color 0.3s ease; */
+
+
+/* .play-button:hover {
+background-color: #e03d3d;
+} */
+
+.voice-wave {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 80px; /* bumped from 60px */
+    margin-bottom: -5%;
+    gap: 2px; /* slightly tighter */
+    cursor: pointer;
+}  
+
+.voice-bar {
+    flex: 1; /* makes all bars flexible in width */
+    background-color: #f25555;
+    border-radius: 2px;
+    opacity: 0.3;
+    transition: opacity 0.3s, height 0.3s; /* faster and responsive */
+    max-width: 6px; /* optional: limit max width for dense look */
+}
+
+.voice-bar.active {
+opacity: 1;
+}
+
+.next-section {
+  background-color: #f4f0e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+  flex-direction: column;
+}
+
+/* Voice message card */
+.voice-message-card {
+  margin-bottom: 25%;
+  background-color: #f25555;
+  color: white;
+  border-radius: 20px;
+  padding: 1.5rem 1.25rem;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Text */
+.message-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: justify;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.message-text h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+/* Audio card */
+.audio-card {
+  background-color: #f25555;
+  color: white;
+  border-radius: 16px;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 390px;
+  margin-top: 1rem;
+}
+
+/* Audio Time */
+.audio-time {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Play button */
+.play-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Voice wave */
+.voice-wave {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  flex-grow: 1;
+  height: 24px;
+  margin: 0 0.5rem;
+  max-width: 200px;
+}
+
+.voice-bar {
+  width: 2px;
+  height: 16px;
+  background-color: white;
+  border-radius: 10px;
+  opacity: 0.3;
+  transition: opacity 0.3s;
+}
+
+.voice-bar.active {
+  opacity: 1;
+}
+
+  
+  /* .play-button {
+    background-color: white;
+    color: #f25555;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  } */
+
+  .audio-card {
+    background-color: #f25555;
+    border-radius: 20px;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 115%;
+    gap: 1rem;
+    height: 25%;
+    margin: 2rem auto 0;
+    margin-bottom: -40%;
+    margin-left: -7.5%;
+    color: white;
+  }
+  
+  .audio-time {
+    font-size: 1rem;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  
+  .voice-wave {
+    display: flex;
+    align-items: flex-end;
+    height: 40px;
+    gap: 3px;
+    cursor: pointer;
+    flex-grow: 1;
+    max-width: 200px;
+  }
+  
+  .voice-bar {
+    width: 3px;
+    background-color: white;
+    border-radius: 10px;
+    opacity: 0.3;
+    transition: opacity 0.3s;
+  }
+  
+  .voice-bar.active {
+    opacity: 1;
+  }
+  
+  .play-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  
